@@ -4,7 +4,11 @@ import { Navbar, Nav, Container, Button } from "react-bootstrap";
 import elemes from "../assets/images/elemes.png";
 
 const Navigation = () => (
-  <Navbar collapseOnSelect fixed="top" expand="sm">
+  <Navbar
+    collapseOnSelect
+    //   fixed="top"
+    expand="sm"
+  >
     <Container className="navbarContainer">
       {/* <Navbar.Toggle aria-controls="responsive-navbar-nav" /> */}
       <Navbar.Brand href="/home">

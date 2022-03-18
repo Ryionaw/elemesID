@@ -16,8 +16,8 @@ const Receipt = ({ title, desc, stars, background, item }) => {
       <Card className={background}>
         <Card.Img
           variant="top"
-          // src={`/assets/images/${item}.png`}
-          src={item}
+          src={`../assets/images/${item}.png`}
+          //   src={item}
           alt={item}
         />
         <Card.Body>

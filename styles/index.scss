@@ -1,4 +1,4 @@
-// global
+// GLOBAL
 .buttonized {
   border-radius: 20px !important;
   margin-right: 16px;
@@ -70,8 +70,11 @@
 .yellowish {
   background-color: #f3f7d9 !important;
 }
-
-// end global
+.container {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+// END GLOBAL
 
 // NAVBAR
 .navbarContainer {
@@ -93,6 +96,11 @@
   }
 }
 // END NAVBAR
+// FOOTER
+.footerContainer {
+  background: #f9fff7;
+}
+// END FOOTER
 
 // HOME
 .bgCustom {
@@ -146,8 +154,7 @@
     color: #ccc;
   }
 }
-// END HOME
-// Swiper part
+// SWIPER
 .categories {
   .category {
     display: flex;
@@ -170,4 +177,6 @@
   //   top: unset;
   // }
 }
-// End Swiper part
+// End SWIPER
+
+// END HOME

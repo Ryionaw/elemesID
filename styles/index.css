@@ -1,42 +1,43 @@
-.btn {
-  border-radius: 20px;
+.buttonized {
+  border-radius: 20px !important;
   margin-right: 16px;
   -webkit-box-shadow: none;
           box-shadow: none;
   border: 0;
 }
 
-.btn.primary {
+.buttonized.primary {
+  background: #8bac3e;
+  color: white;
+  border: 0;
+  padding: 10px 15px;
+}
+
+.buttonized.primary:hover {
   background: #8bac3e;
   color: white;
   border: 0;
 }
 
-.btn.primary:hover {
-  background: #8bac3e;
-  color: white;
-  border: 0;
-}
-
-.btn.secondary {
+.buttonized.secondary {
   background: #f2f2f2;
   color: black;
   border: 0;
 }
 
-.btn.secondary:hover {
+.buttonized.secondary:hover {
   background: #f2f2f2;
   color: black;
   border: 0;
 }
 
-.btn.tertiary {
+.buttonized.tertiary {
   background: transparent;
   color: black;
   border: 0;
 }
 
-.btn.tertiary:hover {
+.buttonized.tertiary:hover {
   background: transparent;
   color: black;
   border: 0;
@@ -66,6 +67,47 @@
   display: flex;
 }
 
+.greenish {
+  background-color: #f0feeb !important;
+}
+
+.blueish {
+  background-color: #e6f3f5 !important;
+}
+
+.purplish {
+  background-color: #eaeefa !important;
+}
+
+.pinky {
+  background-color: #f9eef3 !important;
+}
+
+.yellowish {
+  background-color: #f3f7d9 !important;
+}
+
+.navbarContainer .align-center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbarContainer .nav-link {
+  position: relative;
+}
+
+.navbarContainer .hotSpan {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background: #e7462d;
+  border-radius: 8px;
+  padding: 0px 10px;
+  color: white;
+  font-size: 12px;
+}
+
 .bgCustom {
   background: url("../assets/images/mainBgTransparent.png");
   background-position: center;
@@ -92,7 +134,7 @@
 }
 
 .customizedRow .imageDesc {
-  width: 75%;
+  width: 85%;
   position: absolute;
   left: -28%;
   bottom: -18%;
@@ -107,5 +149,53 @@
 
 .customizedRow .imageDesc .descContainer {
   text-align: left;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.customizedRow .imageDesc .descContainer p {
+  margin: 0;
+}
+
+.starContainer button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0 1px;
+}
+
+.starContainer .on {
+  color: #ff8412;
+}
+
+.starContainer .off {
+  color: #ccc;
+}
+
+.categories .category {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 20px 0;
+}
+
+.categories .category h5 {
+  margin-bottom: 0;
 }
 /*# sourceMappingURL=index.css.map */

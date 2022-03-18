@@ -1,6 +1,6 @@
 // global
-.btn {
-  border-radius: 20px;
+.buttonized {
+  border-radius: 20px !important;
   margin-right: 16px;
   box-shadow: none;
   border: 0;
@@ -8,6 +8,7 @@
     background: #8bac3e;
     color: white;
     border: 0;
+    padding: 10px 15px;
     &:hover {
       background: #8bac3e;
       color: white;
@@ -54,7 +55,46 @@
   display: flex;
 }
 
+.greenish {
+  background-color: #f0feeb !important;
+}
+.blueish {
+  background-color: #e6f3f5 !important;
+}
+.purplish {
+  background-color: #eaeefa !important;
+}
+.pinky {
+  background-color: #f9eef3 !important;
+}
+.yellowish {
+  background-color: #f3f7d9 !important;
+}
+
 // end global
+
+// NAVBAR
+.navbarContainer {
+  .align-center {
+    align-items: center;
+  }
+  .nav-link {
+    position: relative;
+  }
+  .hotSpan {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background: #e7462d;
+    border-radius: 8px;
+    padding: 0px 10px;
+    color: white;
+    font-size: 12px;
+  }
+}
+// END NAVBAR
+
+// HOME
 .bgCustom {
   background: url("../assets/images/mainBgTransparent.png");
   background-position: center;
@@ -72,7 +112,7 @@
     position: relative;
   }
   .imageDesc {
-    width: 75%;
+    width: 85%;
     position: absolute;
     left: -28%;
     bottom: -18%;
@@ -81,10 +121,53 @@
     backdrop-filter: blur(11px);
     border-radius: 17px;
     padding: 20px;
-    .imageContainer {
-    }
     .descContainer {
       text-align: left;
+      flex-direction: column;
+      align-items: flex-start;
+      p {
+        margin: 0;
+      }
     }
   }
 }
+.starContainer {
+  button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 0 1px;
+  }
+  .on {
+    color: #ff8412;
+  }
+  .off {
+    color: #ccc;
+  }
+}
+// END HOME
+// Swiper part
+.categories {
+  .category {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px 0;
+    h5 {
+      margin-bottom: 0;
+    }
+  }
+  // .swiper-button-prev {
+  //   right: 100px;
+  //   left: unset;
+  //   bottom: -40%;
+  //   top: unset;
+  // }
+  // .swiper-button-next {
+  //   bottom: -40%;
+  //   top: unset;
+  // }
+}
+// End Swiper part

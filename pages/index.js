@@ -3,7 +3,7 @@ import { Button, Container, Col, Row } from "react-bootstrap";
 import image1 from "../assets/images/image1.png";
 
 import StarRating from "../components/StarRating";
-import Swiper from "../components/Swiper";
+import Swiper from "../components/swiper";
 import Receipt from "../components/Receipt";
 import MediaQuery from "react-responsive";
 

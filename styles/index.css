@@ -151,6 +151,10 @@
   padding: 4rem 4rem !important;
 }
 
+.footerContainer p {
+  cursor: pointer;
+}
+
 .footerContainer .socmedContainer a {
   margin: 0 7px;
   color: #8bac3e;
@@ -331,14 +335,14 @@
 .categories .swiper-button-prev {
   top: unset;
   bottom: 5%;
-  right: 22%;
+  right: 20%;
   left: unset;
 }
 
 .categories .swiper-button-next {
   top: unset;
   bottom: 5%;
-  right: 16.5%;
+  right: 12.5%;
   left: unset;
 }
 

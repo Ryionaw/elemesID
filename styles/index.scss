@@ -128,6 +128,9 @@
 .footerContainer {
   background: #f9fff7;
   padding: 4rem 4rem !important;
+  p {
+    cursor: pointer;
+  }
   .socmedContainer {
     a {
       margin: 0 7px;
@@ -271,13 +274,13 @@
   .swiper-button-prev {
     top: unset;
     bottom: 5%;
-    right: 22%;
+    right: 20%;
     left: unset;
   }
   .swiper-button-next {
     top: unset;
     bottom: 5%;
-    right: 16.5%;
+    right: 12.5%;
     left: unset;
   }
   .swiper-button-next,

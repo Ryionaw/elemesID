@@ -84,17 +84,19 @@ const swiper = () => {
         </div>
       </SwiperSlide>
       <MediaQuery minWidth={768}>
-        <div className="swiper-button-prev">
-          <Button>
-            <FaAngleLeft className="icons" />
-            Prev
-          </Button>
-        </div>
-        <div className="swiper-button-next">
-          <Button>
-            <FaAngleRight className="icons" />
-            Next
-          </Button>
+        <div className="buttonContainer">
+          <div className="swiper-button-prev">
+            <Button>
+              <FaAngleLeft className="icons" />
+              Prev
+            </Button>
+          </div>
+          <div className="swiper-button-next">
+            <Button>
+              <FaAngleRight className="icons" />
+              Next
+            </Button>
+          </div>
         </div>
       </MediaQuery>
     </Swiper>

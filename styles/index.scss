@@ -174,7 +174,7 @@
 
 // HOME
 .bgCustom {
-  background: url("../assets/images/mainBgTransparent.png");
+  background: url("/mainBgTransparent.png");
   background-position: center;
   background-size: cover;
 }
@@ -238,7 +238,7 @@
   .card {
     border-radius: 20px;
     &.hovered {
-      background: url("../assets/images/mainBgTransparent2.png");
+      background: url("/mainBgTransparent2.png");
       background-position: center;
       background-size: cover;
       cursor: pointer;
@@ -256,7 +256,7 @@
     padding: 20px 0;
     border-radius: 20px;
     &:hover {
-      background: url("../assets/images/mainBgTransparent2.png");
+      background: url("/mainBgTransparent2.png");
       background-position: center;
       background-size: cover;
       padding-bottom: 30px;

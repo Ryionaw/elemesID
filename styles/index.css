@@ -199,7 +199,7 @@
 }
 
 .bgCustom {
-  background: url("../assets/images/mainBgTransparent.png");
+  background: url("/mainBgTransparent.png");
   background-position: center;
   background-size: cover;
 }
@@ -286,7 +286,7 @@
 }
 
 .receipt .card.hovered {
-  background: url("../assets/images/mainBgTransparent2.png");
+  background: url("/mainBgTransparent2.png");
   background-position: center;
   background-size: cover;
   cursor: pointer;
@@ -315,7 +315,7 @@
 }
 
 .categories .category:hover {
-  background: url("../assets/images/mainBgTransparent2.png");
+  background: url("/mainBgTransparent2.png");
   background-position: center;
   background-size: cover;
   padding-bottom: 30px;

@@ -1,9 +1,13 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Button } from "react-bootstrap";
 import SwiperCore, { Autoplay, Navigation } from "swiper";
 import "swiper/css";
 import "swiper/css/navigation";
 import Image from "next/image";
+import MediaQuery from "react-responsive";
+import { FaAngleRight, FaAngleLeft } from "react-icons/fa";
+
 import cupcake from "../assets/images/cupcake.png";
 import pizza from "../assets/images/pizza.png";
 import kebab from "../assets/images/kebab.png";
@@ -16,16 +20,25 @@ SwiperCore.use([Autoplay]);
 SwiperCore.use([Navigation]);
 const swiper = () => {
   const params = {
-    spaceBetween: 50,
-    slidesPerView: 5.5,
+    spaceBetween: 20,
+    slidesPerView: 2.3,
     loop: true,
     draggable: true,
     freeMode: true,
     autoplay: {
-      delay: 2000,
-      disableOnInteraction: false,
+      delay: 4000,
+      disableOnInteraction: true,
     },
-    navigation: true,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+      760: {
+        spaceBetween: 50,
+        slidesPerView: 5.5,
+      },
+    },
   };
 
   return (
@@ -70,6 +83,20 @@ const swiper = () => {
           <p>11 Items</p>
         </div>
       </SwiperSlide>
+      <MediaQuery minWidth={768}>
+        <div className="swiper-button-prev">
+          <Button>
+            <FaAngleLeft className="icons" />
+            Prev
+          </Button>
+        </div>
+        <div className="swiper-button-next">
+          <Button>
+            <FaAngleRight className="icons" />
+            Next
+          </Button>
+        </div>
+      </MediaQuery>
     </Swiper>
   );
 };

@@ -14,6 +14,9 @@ const Navigation = () => (
       <Navbar.Brand href="/home">
         <Image src={elemes} alt="logo" />
       </Navbar.Brand>
+      <Nav.Link href="/signup" className="onMobile">
+        <Button className="btn buttonized primary">Daftar Sekarang</Button>
+      </Nav.Link>
 
       <Navbar.Collapse
         id="responsive-navbar-nav"

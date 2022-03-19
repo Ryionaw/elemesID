@@ -10,7 +10,7 @@ const Layout = ({ children }) => (
     <Head>
       <title>Elemes.id</title>
     </Head>
-    <Container>
+    <Container fluid>
       <header>
         <Navbars />
       </header>
